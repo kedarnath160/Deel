@@ -1,7 +1,7 @@
 let  csv = require("csvtojson");
 async  function acceptanceRateCalculator(){
 
-let  jsonArray = await csv().fromFile('D:/Deel/Deel-main/Docs/Globepay-Acceptance-Report.csv');
+let  jsonArray = await csv().fromFile('D:/Deel/Deel-Acceptance-Rate/Docs/Globepay-Acceptance-Report.csv');
 // console.log("json array", jsonArray);
 let acceptanceRecords  = jsonArray.filter((record) => record.state==='ACCEPTED');
 
